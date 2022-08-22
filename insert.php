@@ -12,11 +12,6 @@ if (isset($_POST['upload'])){
     $image_up = 'images/' . $image_name;
     $insert = "INSERT INTO prod (name , price , image) VALUES ('$NAME','$PRICE','$image_up')";
     mysqli_query($con, $insert);
-    if (move_uploaded_file($image_location,'images/'. $image_name)){
-        echo "<script>alert(' upload was seccefull ')</script>";
-    }else{
-        echo "<script>alert(' there are problem  ')</script>";
-    }
 
     header('location: index.html');
 
