@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+  height: 100vh;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.login {
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  margin: 20px auto 0;
+  width: 298px;
+}
+
+input[type="password"],
+input[type="text"],input[type="email"] {
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+input[type="date"]{
+    border: 1px solid #a1a3a3;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    box-sizing: border-box;
+    color: #696969;
+    height: 39px;
+    margin: 31px 0 0 29px;
+    padding-left: 37px;
+    transition: box-shadow 0.3s;
+    width: 240px;
+    font-size: 1em;
+    position: relative;
+
+
+}
+input[type="password"]:focus,
+input[type="text"]:focus,input[type="date"]:focus,input[type="email"]:focus {
+    border: solid 2px #37a69b;
+  box-shadow: 0 1px 5px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0px #37a69b;
+  padding-top: 6px;
+  margin: 29px 0 0 29px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #37a69b;
+  background-image: linear-gradient(top, #3db0a6, #3111);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+  transition: all 0.5s;
+  animation: ttb 1.5s infinite ease-in-out;
+}
+@keyframes ttb {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(2px);
+
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+input[type="submit"]:active {
+  top: 3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+
+.forgot {
+  color: #7f7f7f;
+  display: inline-block;
+  font: 12px/1 sans-serif;
+  position: relative;
+  text-decoration: none;
+  top: 5px;
+  transition: color .4s;
+}
+span{
+    position: relative;
+    left: -230px;
+}
+.userimage{
+    outline: none;
+    color: black;
+    border: solid 1px #eceeee;
+    background-color:#eceeee;
+    padding: 2px 4px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+label{
+    opacity: 0.99;
+    outline: none;
+    top: -15px;
+    z-index: 5;
+    font-size: 0.5em;
+    position: relative;
+    padding: 1px 3px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    color: #fff;
+    border-radius: 50%;
+}
+.userimage img{
+    z-index: 4;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
