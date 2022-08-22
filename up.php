@@ -12,13 +12,7 @@ if (isset($_POST['update'])){
     $image_up = 'images/' . $image_name;
     $update = "UPDATE prod SET name='$NAME' , price='$PRICE' , image='$image_up' WHERE id=$ID";
     mysqli_query($con, $insert);
-    if (move_uploaded_file($image_location,'images/'. $image_name)){
-        echo "<script>alert('upload was succfull ')</script>";
-    }else{
-        echo "<script>alert(' there are a problem  ')</script>";
-    }
-
-    header('location: index.php');
+    header('location: index.html');
 
 
 
